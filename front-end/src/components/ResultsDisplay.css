@@ -1,0 +1,146 @@
+.results-container {
+
+    margin-top: 2rem;
+    
+    width: 100%;
+
+    max-width: 500px; 
+    
+    animation: slideUp 0.5s ease-out; 
+}
+
+.result-card {
+    background: rgba(30, 30, 30, 0.6);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 4rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+
+
+
+.result-card.safe {
+    border-color: rgba(0, 255, 136, 0.3);
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.1);
+}
+.result-card.safe .icon-box {
+    color: #00ff88;
+    background: rgba(0, 255, 136, 0.1);
+}
+
+
+.result-card.danger {
+    border-color: rgba(255, 50, 50, 0.3);
+    box-shadow: 0 0 20px rgba(255, 50, 50, 0.1);
+}
+.result-card.danger .icon-box {
+    color: #ff3333;
+    background: rgba(255, 50, 50, 0.1);
+}
+
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.card-header h3 {
+    margin: 0;
+    font-size: 1.5rem; 
+    
+   
+    color: #fff; 
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.stats-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.stat-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.stat-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.progress-bg {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 4px;
+    animation: encherBarra 1.5s ease-out forwards;
+}
+
+
+.fill-danger { background: #ff3333; }
+.fill-safe { background: #00ff88; }
+
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.error-box {
+    background: rgba(255, 50, 50, 0.1);
+    border: 1px solid #ff3333;
+    color: #ff9999;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+@keyframes encherBarra {
+    from { width: 0%; }
+    
+}
+
+.result-card.safe .card-header h3 {
+    color: #00ff88;
+}
+
+
+.result-card.danger .card-header h3 {
+    color: #ff3333;
+}

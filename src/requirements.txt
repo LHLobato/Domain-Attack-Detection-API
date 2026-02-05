@@ -1,0 +1,24 @@
+# Core Data Science & ML
+numpy
+pandas
+scikit-learn
+xgboost
+
+# Deep Learning Frameworks
+torch
+torchvision
+transformers
+
+# API & Web Server
+flask
+flask-cors
+gunicorn
+
+# Image Processing (for Image Reshaping)
+opencv-python
+pillow
+
+# Utilities
+requests
+python-dotenv
+tqdm
